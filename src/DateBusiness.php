@@ -11,6 +11,10 @@ class DateBusiness extends DateTime
      */
     public function isBusinessDay()
     {
-        return true;
+        if ($this->format('N') < 6) {
+            return true;
+        }
+
+        return false;
     }
 }

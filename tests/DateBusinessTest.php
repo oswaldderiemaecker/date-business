@@ -29,4 +29,10 @@ class DateBusinessTest extends \PHPUnit_Framework_TestCase
         $this->dateBusiness->setDate(2014, 3, 10);
         $this->assertTrue($this->dateBusiness->isBusinessDay());
     }
+
+    public function testIsValidBusinessDayOnSaturday()
+    {
+        $this->dateBusiness->setDate(2014, 3, 15);
+        $this->assertFalse($this->dateBusiness->isBusinessDay());
+    }
 }
