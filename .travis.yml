@@ -12,7 +12,8 @@ matrix:
     - php: hhvm
 
 install:
+  - composer selfupdate
   - composer install
 
 script:
-  - ./vendor/bin/phpunit
+  - ./vendor/bin/phpunit -c phpunit.travis.yml
