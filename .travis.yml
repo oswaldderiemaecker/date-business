@@ -11,9 +11,11 @@ matrix:
   allow_failures:
     - php: hhvm
 
-install:
+before_install
   - composer selfupdate
+
+install:
   - composer install
 
 script:
-  - ./vendor/bin/phpunit -c phpunit.travis.yml
+  - ./vendor/bin/phpunit -c phpunit.travis.xml
