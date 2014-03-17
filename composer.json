@@ -1,20 +1,21 @@
 {
-	"name": "intl/date-business",
-	"description": "Validate and calulate business days",
-	"license": "MIT",
-	"authors": [
-		{
-			"name": "Dennis Becker",
-			"email": "mail.dennisbecker@gmail.com"
-		}
-	],
-	"require-dev": {
-		"phpunit/phpunit": ">=4.0",
-        "squizlabs/php_codesniffer": ">=1.5"
-	},
-	"autoload": {
-		"psr-4": {
-			"Intl\\": "src"
-		}
-	}
+    "name": "intl/date-business",
+    "description": "Validate and calulate business days",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dennis Becker",
+            "email": "mail.dennisbecker@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpmd/phpmd": "~1.5",
+        "phpunit/phpunit": "~4.0",
+        "squizlabs/php_codesniffer": "~1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Intl\\": "src"
+        }
+    }
 }
