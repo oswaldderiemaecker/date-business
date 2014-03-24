@@ -26,14 +26,16 @@ module.exports = function(grunt) {
                 }
             },
             full: {
-                classes: {
-                    dir: 'tests/'
-                },
+                dir: 'tests/',
                 options: {
                     bin: 'vendor/bin/phpunit',
+                    noConfiguration: true,
                     bootstrap: 'vendor/autoload.php',
                     colors: true,
-                    strict: true
+                    strict: true,
+                    logJunit: 'build/log/junit.xml',
+                    coverageClover: 'build/log/coverage.xml',
+                    coverageHtml: 'build/coverage'
                 }
             }
         },
