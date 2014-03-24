@@ -8,6 +8,10 @@
             "email": "mail.dennisbecker@gmail.com"
         }
     ],
+    "require": {
+        "php": ">=5.3",
+        "ext-intl": "*"
+    },
     "require-dev": {
         "phpmd/phpmd": "~1.5",
         "phpunit/phpunit": "~4.0",
