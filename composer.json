@@ -1,6 +1,6 @@
 {
     "name": "intl/date-business",
-    "description": "Validate and calulate business days",
+    "description": "Calculate and validate business days",
     "license": "MIT",
     "authors": [
         {
